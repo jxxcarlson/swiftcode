@@ -39,9 +39,11 @@ import Foundation
 
 // Data on English:
 
+let alphabet = "abcdefghijklmnopqrstuvwxyz"
 let consonants = "bcdfghjklmnpqrstvwxyz"
 let vowels = "aeiou"
-let alphabet = "abcdefghijklmnopqrstuvwxyz"
+let digits = "0123456789"
+
 let digrams = ["th", "he", "in", "er", "an", "re", "nd", "at", "on", "nt", "ha", "es", "st", "en", "ed", "to", "it", "ou", "ea", "hi", "is", "or", "ti", "as", "te", "et", "ng", "of", "al", "de", "se", "se", "sa", "si", "ar", "ve", "ra", "ld", "ur"]
 
 
