@@ -209,3 +209,63 @@ for k in 1...10 {
     println("\(k): \(pureNonsense9())")
 }
 
+//////////////////////
+
+// Another way of generating pronounceable words
+
+func nextChar(currentChar: Character) -> Character {
+
+	var newChar: Character = " "
+	
+  if charInString(currentChar, consonants) { 
+		
+	  newChar = vowels.randChar()
+	  
+	  }  else {
+		
+	  newChar  = alphabet.randChar()
+		
+	}
+	  
+ 	
+	if newChar != currentChar {
+		
+		return newChar 
+		
+		} else {
+			 
+			return nextChar(currentChar)
+		}
+}
+
+func word(N: Int) -> String {
+    
+    var output = ""
+	var char = alphabet.randChar()
+    output += char
+	
+	for k in 2...N {
+		char = nextChar(char)
+		output += char
+	}
+    
+    return output
+}
+
+func password(wordSize: Int, numberOfWords: Int, numberOfDigits: Int) -> String {
+    
+    var output = ""
+    
+    for k in 1...numberOfWords {
+        
+       output += word(wordSize)+"-"
+    }
+    
+    output += digits.randString(numberOfDigits)
+    
+    
+    return output
+    
+}
+
+
