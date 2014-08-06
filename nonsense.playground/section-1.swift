@@ -1,6 +1,9 @@
 
 // File: nonsense.playground
 // -------------------------
+// Author:  James Carlson
+// Date:    August 6, 2014
+// License: MIT
 //
 // Description: produce pronounceable
 // nonsense words, eg.
@@ -22,9 +25,13 @@
 // 4: ftkm-aakif
 //
 // The first set of words is produced
-// by the function pattenedNonsense(),
+// by the function patternedNonsense(),
 // the second by pureNonsense9().
 //
+// The number of possible words
+// produced by the first algorithms
+// is 7.3e6.  By the second it is
+// 5.4e12. 
 
 import Foundation
 
